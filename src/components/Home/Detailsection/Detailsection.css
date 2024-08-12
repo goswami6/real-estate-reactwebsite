@@ -1,0 +1,135 @@
+.block {
+    padding: 70px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .detail {
+    margin-bottom: 80px;
+  }
+  .detail:last-child {
+    margin-bottom: 30px;
+  }
+  /* .detail.left-align .gallery {
+    padding-left: 70px;
+  } */
+  .detail.left-align .title {
+    text-align: left;
+  }
+  .detail.left-align .title .framed {
+    padding-right: 100px;
+  }
+  .detail.right-align .gallery {
+    padding-right: 70px;
+  }
+  .detail.right-align .title {
+    text-align: right;
+  }
+  .detail.right-align .title .framed {
+    padding-left: 100px;
+  }
+  .detail .description h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .detail .description p {
+    margin-bottom: 40px;
+  }
+  .detail .title {
+    z-index: 2;
+    position: relative;
+  }
+  .detail .title h3 {
+    margin-top: 0px;
+    margin-bottom: -80px;
+  }
+  .detail .title .framed {
+    padding-bottom: 100px;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+.gallery{
+    position: relative;
+    width: 80%;
+    height: 18rem;
+background-size: cover;
+color: #fff;
+background-position: center;
+background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),url('../../assets/img/hero_bg_3.jpg');
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+left:5rem ;
+}
+.col-md-7 {
+    width: 58.33333333%;
+}
+.col-sm-7, .col-md-7{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.col-md-5 {
+    width: 41.66666667%;
+}
+.col-sm-5, .col-md-5{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.framed {
+    border: 15px solid rgba(0, 0, 0, 0.05);
+    padding: 25px;
+}
+h3.framed{
+    display: inline-block;
+}
+.detail.left-align .title .framed {
+    padding-right: 100px;
+}
+.detail .title .framed {
+    padding-bottom: 100px;
+}
+.detail .title h3 {
+    margin-top: 0px;
+    margin-bottom: -80px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+   overflow: hidden;
+   position: absolute;
+   display: block;
+  }
+  
+  .swiper-slide {
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 840px){
+    .gallery{
+      left: 0;
+      width: 100%;
+    }
+  }

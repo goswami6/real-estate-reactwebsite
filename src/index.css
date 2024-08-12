@@ -1,0 +1,680 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    color: #1f1f1f;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    background: #fff;
+    overflow-x: hidden;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .container{
+    padding-left:10% ;
+    padding-right: 10%;
+  }
+  .btn{
+    background: #fff;
+    color: #212121;
+    padding: 14px 25px;
+    font-size: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+  }
+  h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 60px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  p {
+    line-height: 18px;
+  }
+  .background-is-dark {
+    color: #fff;
+  }
+
+  /* media query */
+
+  .hover-effect:hover span .hover-element {
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  .hover-effect:hover span .hover-element:nth-child(2) {
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .hover-effect span {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    top: -1px;
+  }
+  .hover-effect span .hover-element {
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    position: relative;
+    overflow: hidden;
+    /*padding: 2px 0; */
+  }
+  .hover-effect span .hover-element:nth-child(2) {
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .hover-effect span {
+      top: 0;
+    }
+  }
+  .hover-effect.underline span .hover-element {
+    text-decoration: underline;
+  }
+
+
+  @media (max-width: 1200px) {
+    .container{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .btn{
+      padding: 14px 22px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    body {
+      font-size: 12px;
+    }
+  
+    h1 {
+      font-size: 64px;
+    }
+  
+    h2 {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+  
+    h3 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    h4 {
+      font-size: 13px;
+    }
+  
+    p {
+      line-height: 18px;
+    }
+  
+    .block {
+      padding: 60px 0;
+    }
+  
+    .feature h3 {
+      font-size: 16px;
+    }
+  
+    .framed {
+      padding: 20px;
+    }
+  
+    .stage .description h2 {
+      font-size: 18px;
+    }
+    .stage .description h3 {
+      font-size: 11px;
+    }
+    .stage .description figure {
+      font-size: 12px;
+    }
+  
+    .pricing-boxes .price-box h3 {
+      font-size: 20px;
+    }
+    .pricing-boxes .price-box .price {
+      font-size: 16px;
+    }
+  
+    .pricing-boxes .price-box.framed .price-box-footer, .pricing-boxes .price-box.promoted.framed .price-box-footer {
+      margin: 20px -20px -20px -20px;
+    }
+  
+    .contact .person .image {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .person .image {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .person.framed {
+      padding: 20px 5px;
+    }
+  
+    .blog-item .image {
+      height: 100px;
+    }
+  
+    .count-down .countdown-row .countdown-amount {
+      font-size: 100px;
+      margin-bottom: -10px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 11px;
+    }
+  
+    blockquote {
+      font-size: 18px;
+    }
+    blockquote p {
+      line-height: 22px;
+    }
+  
+    h1 {
+      font-size: 48px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  
+    h3 {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  
+    h4 {
+      font-size: 12px;
+    }
+  
+    p {
+      line-height: 16px;
+    }
+  
+    .block {
+      padding: 40px 0;
+    }
+  
+    .count-down .countdown-row .countdown-amount {
+      font-size: 80px;
+      margin-bottom: -10px;
+    }
+  
+    .detail {
+      margin-bottom: 40px;
+    }
+    .detail.left-align .gallery {
+      padding-left: 50px;
+    }
+    .detail.left-align .title .framed {
+      padding-right: 70px;
+    }
+    .detail.right-align .gallery {
+      padding-right: 50px;
+    }
+    .detail.right-align .title .framed {
+      padding-left: 70px;
+    }
+  
+    .feature h3 {
+      font-size: 14px;
+    }
+  
+    .framed {
+      padding: 20px;
+    }
+  
+    .logos .logo {
+      padding-left: 0px;
+    }
+  
+    .stage .icon {
+      width: 50px;
+      height: 50px;
+      line-height: 60px;
+    }
+    .stage .icon i {
+      font-size: 20px;
+    }
+  
+    .stage .description {
+      padding-left: 60px;
+    }
+    .stage .description h2 {
+      font-size: 13px;
+    }
+    .stage .description h3 {
+      font-size: 10px;
+    }
+    .stage .description figure {
+      font-size: 11px;
+    }
+  
+    .panel-group .panel .panel-heading h4 {
+      font-size: 11px;
+    }
+  
+    .pricing-boxes .price-box h3 {
+      font-size: 20px;
+    }
+    .pricing-boxes .price-box .price {
+      font-size: 16px;
+    }
+  
+    .pricing-boxes .price-box.framed .price-box-footer, .pricing-boxes .price-box.promoted.framed .price-box-footer {
+      margin: 20px -20px -20px -20px;
+    }
+  
+    .contact .person .image {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .person .image {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .person.framed {
+      padding: 20px 5px;
+    }
+  
+    .blog-item .image {
+      height: 100px;
+    }
+  
+    .marketing-banner h2 {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    body {
+      font-size: 12px;
+    }
+  
+    blockquote {
+      padding-left: 0;
+    }
+    blockquote p:before {
+      display: none;
+    }
+  
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    h3 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    h4 {
+      font-size: 13px;
+    }
+  
+    p {
+      line-height: 18px;
+    }
+  
+    ul {
+      line-height: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  
+    .block {
+      padding: 30px 0;
+    }
+  
+    .big-gallery .slide {
+      width: 100%;
+    }
+    .big-gallery .slide .container {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .big-gallery .slide .description h3 {
+      margin-top: -80px;
+      margin-bottom: 0px;
+      padding-top: 80px;
+      padding-right: 40px;
+      margin-left: 10px;
+    }
+  
+    .count-down .countdown-row .countdown-section:after {
+      display: none;
+    }
+    .count-down .countdown-row .countdown-amount {
+      font-size: 22px;
+      margin-bottom: 0px;
+    }
+    .count-down .countdown-row .countdown-period {
+      font-size: 9px;
+    }
+  
+    .container .block {
+      padding: 20px;
+    }
+  
+    .owl-nav-wrapper #big-gallery-nav {
+      top: -55px;
+    }
+  
+    .detail {
+      margin-bottom: 40px;
+    }
+    .detail .title {
+      margin-bottom: 40px;
+    }
+    .detail.left-align .gallery {
+      margin-bottom: 30px;
+      padding-left: 0px;
+    }
+    .detail.left-align .title .framed {
+      padding: 10px;
+    }
+    .detail.right-align .gallery {
+      padding-right: 0px;
+    }
+    .detail.right-align .title {
+      text-align: left;
+    }
+    .detail.right-align .title .framed {
+      padding: 10px;
+    }
+  
+    #page-footer .contact-data {
+      text-align: left;
+    }
+    #page-footer .numbers {
+      margin-top: 40px;
+    }
+  
+    .feature.has-icon .description {
+      padding-left: 30px;
+    }
+  
+    .panel-group.background-solid .panel:last-child {
+      margin-bottom: 20px;
+    }
+  
+    .pricing-boxes .price-box.framed .price-box-footer, .pricing-boxes .price-box.promoted.framed .price-box-footer {
+      margin: 20px -20px -20px -20px;
+    }
+  
+    .framed {
+      padding: 20px;
+    }
+  
+    .stage {
+      margin-bottom: 40px;
+    }
+    .stage .description h2 {
+      font-size: 16px;
+    }
+    .stage .description h3 {
+      font-size: 11px;
+    }
+    .stage .description figure {
+      font-size: 12px;
+    }
+  
+    thead th {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  
+    tbody tr td, .pricing-table tbody tr td {
+      padding: 10px 8px;
+    }
+  
+    .logos .owl-stage .owl-item .logo, .logos .owl-stage .owl-item {
+      display: inline-block;
+    }
+  
+    .logos .logo {
+      padding-left: 0px;
+    }
+  
+    .time-line .time-line-item .description {
+      margin-left: 30px;
+    }
+  
+    .time-line .time-line-item .date {
+      position: relative;
+    }
+  
+    .navigation.nav-btn-only .right .navigation-links {
+      top: 50px;
+      text-align: right;
+    }
+    .navigation.nav-btn-only .right .navigation-links li {
+      display: block;
+      padding: 10px 0px;
+      margin-bottom: 0;
+      font-size: 28px;
+      padding: 0;
+    }
+    .navigation.nav-btn-only .right .navigation-links li a {
+      padding: 5px 0px;
+    }
+    .navigation.nav-btn-only .right .navigation-links li a.hover-effect {
+      padding: 0;
+    }
+    .navigation .nav-btn {
+      display: block;
+    }
+    .navigation .right .navigation-links {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+      -moz-transition: 0.5s ease;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+      -moz-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      visibility: hidden;
+    }
+    .navigation .right .navigation-links li {
+      display: block;
+      padding: 10px 0px;
+      margin-bottom: 0;
+      font-size: 28px;
+    }
+    .navigation .right .navigation-links li a {
+      padding: 5px 0px;
+    }
+    .navigation .wrapper {
+      padding: 20px 0;
+      position: relative;
+    }
+    .navigation .left {
+      display: block;
+    }
+    .navigation .right {
+      display: block;
+      position: initial;
+    }
+  
+    .navigation-links {
+      position: absolute;
+      right: 5px;
+      width: 100%;
+      margin-top: 10px !important;
+    }
+  
+    .floor-selector h2 {
+      font-size: 14px;
+    }
+  
+    .floor-selector .description {
+      font-size: 9px;
+    }
+  
+    .floor-selector .floor {
+      padding: 3px 5px;
+      font-size: 9px;
+    }
+  
+    .hero-section .video-player, .hero-section .gallery {
+      margin-top: 20px;
+    }
+    .hero-section p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  
+    .hero-section form {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .number {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .owl-nav-wrapper {
+      position: absolute;
+      width: 100%;
+      right: 5px;
+    }
+  
+    .navigation .right .navigation-links li a.roll-effect {
+      padding: 0;
+    }
+  
+    .roll-effect span figure {
+      padding: 5px 0;
+    }
+  
+    .navigation.nav-btn-only .right .navigation-links li a.roll-effect {
+      padding: 0;
+    }
+  
+    .navigation.nav-btn-only .right .navigation-links li a.roll-effect span figure {
+      padding: 5px 0;
+    }
+  
+    .width-10 {
+      width: 100%;
+    }
+  
+    .width-20 {
+      width: 100%;
+    }
+  
+    .width-25 {
+      width: 100%;
+    }
+  
+    .width-30 {
+      width: 100%;
+    }
+  
+    .width-33 {
+      width: 100%;
+    }
+  
+    .width-40 {
+      width: 100%;
+    }
+  
+    .width-50 {
+      width: 100%;
+    }
+  
+    .width-60 {
+      width: 100%;
+    }
+  
+    .width-70 {
+      width: 100%;
+    }
+  
+    .width-80 {
+      width: 100%;
+    }
+  
+    .width-90 {
+      width: 100%;
+    }
+  
+    .version-selector .version {
+      text-align: center;
+      display: block;
+    }
+    .version-selector .version .description {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 840px){
+    
+    .about-row{
+      width: 95%;
+    }
+  }

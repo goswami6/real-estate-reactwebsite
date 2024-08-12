@@ -1,0 +1,68 @@
+.block {
+    padding: 70px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  #gallery{
+    min-height: 100vh;
+  }
+  .gtitle{
+    z-index: 10;
+    margin-bottom: 5rem;
+    position: absolute;
+  }
+  .big-gallery{
+    margin-top: 50rem;
+  }
+  .big-gallery .slide {
+    width: 100%;
+  }
+  .big-gallery .slide .gcontainer {
+    padding: 0;
+    margin: 0;
+  }
+  .big-gallery .slide .description {
+    text-align: left;
+  }
+  .big-gallery .slide .description h3 {
+    margin-top: -60px;
+    margin-bottom: 0px;
+    padding-top: 80px;
+    padding-right: 80px;
+    margin-left: 20px;
+  }
+  .big-gallery .slide img {
+    width: 100%;
+    background-size: cover;
+color: #fff;
+background-position: center;
+  }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+   /* Basic Button Styles */
+   @media (max-width: 840px){
+    .big-gallery{
+      margin-top: 0px;
+    }
+   }

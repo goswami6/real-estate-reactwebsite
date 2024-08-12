@@ -1,0 +1,105 @@
+#page-footer .contact-data {
+    text-align: left;
+  }
+  #page-footer .numbers {
+    margin-top: 40px;
+  }
+  #page-footer h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  #page-footer .brand {
+    margin-bottom: 20px;
+    display: block;
+  }
+  #page-footer .numbers {
+    margin-top: 250px;
+  }
+  #page-footer .number figure {
+    font-size: 30px;
+  }
+  #page-footer .to-top {
+    position: relative;
+  }
+  #page-footer .to-top span {
+    display: none;
+  }
+  #page-footer .to-top .arrow-up {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #page-footer .to-top .arrow-up i {
+    font-size: 24px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    height: 25px;
+    width: 24px;
+  }
+  #page-footer {
+    padding: 50px 0px;
+    position: relative;
+  }
+  #page-footer.background-is-dark:after {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    background: -moz-linear-gradient(top, transparent 0%, black 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+    background: linear-gradient(to bottom, transparent 0%, black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+  }
+  #page-footer:after {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+    
+    /* align-items: start; */
+}
+.number {
+    position: relative;
+}
+.number p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.col-md-2 {
+    width: 16.66666667%;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+}
+  .note {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .opacity-30 {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+  }
+  .background-is-dark .framed {
+    border-color: rgba(255, 255, 255, 0.2);
+}

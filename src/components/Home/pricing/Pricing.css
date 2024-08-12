@@ -1,0 +1,137 @@
+.block {
+    padding: 70px 0;
+    overflow: hidden;
+    position: relative;
+  }
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+}
+.price-container{
+    display: flex;
+}
+.pricing-boxes{
+    display: flex;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-sm-3, .col-md-3{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.pricing-boxes .price-box {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .pricing-boxes .price-box h3 {
+    font-size: 24px;
+  }
+  .pricing-boxes .price-box .price {
+    font-size: 18px;
+  }
+  .pricing-boxes .price-box.description {
+    text-align: left;
+    padding-top: 40px;
+}
+  .pricing-boxes .price-box .price.old {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  .pricing-boxes .price-box .values {
+    margin: 20px 0;
+  }
+  .pricing-boxes .price-box .values figure {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 4px 0;
+  }
+  .pricing-boxes .price-box .values figure:last-child {
+    border-bottom: none;
+  }
+  .pricing-boxes .price-box .values figure i {
+    font-size: 18px;
+  }
+  .pricing-boxes .price-box .values figure.not-available {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+  }
+  .pricing-boxes .price-box .values figure.available {
+    color: #50aa8d;
+  }
+  .background-is-dark .pricing-boxes .price-box .values figure {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .background-is-dark .pricing-boxes .price-box.framed .price-box-footer {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .background-is-dark .pricing-boxes .price-box.promoted {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .background-is-dark .pricing-boxes .price-box.promoted.framed {
+    border: 15px solid rgba(255, 255, 255, 0.4);
+  }
+  .background-is-dark .pricing-boxes .price-box.promoted.framed .price-box-footer {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .pricing-boxes .price-box .price-box-footer {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  .pricing-boxes .price-box.framed .price-box-footer {
+    background-color: rgba(0, 0, 0, 0.05);
+    margin: 20px -25px -25px -25px;
+  }
+  .pricing-boxes .price-box.promoted {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .pricing-boxes .price-box.promoted.framed {
+    background-color: transparent;
+    border: 15px solid rgba(0, 0, 0, 0.2);
+  }
+  .pricing-boxes .price-box.promoted.framed .price-box-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px -25px -25px -25px;
+  }
+  .pricing-boxes .price-box .promotion-title {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+  }
+  .btn.btn-primary.btn-framed.btn-light-frame {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn-framed {
+  background-color: transparent;
+}
+  .pricing-boxes .price-box .promotion-title span {
+    font-size: 11px;
+    color: #fff;
+    background-color: #50aa8d;
+    padding: 8px 10px;
+  }
+  .pricing-boxes .price-box.description {
+    text-align: left;
+    padding-top: 40px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 7px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  /* Rounded Button */
+ 
+  
